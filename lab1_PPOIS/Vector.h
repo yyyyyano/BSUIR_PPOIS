@@ -1,5 +1,5 @@
-#ifndef MATHVECTOR_H
-#define MATHVECTOR_H
+#ifndef VECTOR_H
+#define VECTOR_H
 
 #include <iostream>
 using namespace std;
