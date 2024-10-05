@@ -1,4 +1,4 @@
-#include "MathVector.h"
+#include "Vector.h"
 
 void Vector::CoordinateDifference(double& x, double& y, double& z) {
 	x = endX - startX;
