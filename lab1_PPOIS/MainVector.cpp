@@ -1,4 +1,4 @@
-﻿#include"MathVector.h"
+﻿#include"Vector.h"
 
 int main()
 {
