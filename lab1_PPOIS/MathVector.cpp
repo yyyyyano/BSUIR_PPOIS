@@ -77,16 +77,16 @@ double Vector::CalculateLength() {
 }
 
 Vector Vector::operator + (Vector& other) {
-	Vector temp;
-	temp.startX = this->startX;
-	temp.startY = this->startY;
-	temp.startZ = this->startZ;
+	Vector tempVectorForSum;
+	tempVectorForSum.startX = this->startX;
+	tempVectorForSum.startY = this->startY;
+	tempVectorForSum.startZ = this->startZ;
 	double otherX, otherY, otherZ;
 	other.CoordinateDifference(otherX, otherY, otherZ);
-	temp.endX = this->endX + otherX;
-	temp.endY = this->endY + otherY;
-	temp.endZ = this->endZ + otherZ;
-	return temp;
+	tempVectorForSum.endX = this->endX + otherX;
+	tempVectorForSum.endY = this->endY + otherY;
+	tempVectorForSum.endZ = this->endZ + otherZ;
+	return tempVectorForSum;
 }
 
 Vector& Vector::operator +=(Vector& other) {
@@ -99,16 +99,16 @@ Vector& Vector::operator +=(Vector& other) {
 }
 
 Vector Vector::operator - (Vector& other) {
-	Vector temp;
+	Vector tempVectorForDifference;
 	double otherX, otherY, otherZ;
 	other.CoordinateDifference(otherX, otherY, otherZ);
-	temp.startX = this->startX + otherX;
-	temp.startY = this->startY + otherY;
-	temp.startZ = this->startZ + otherZ;
-	temp.endX = this->endX;
-	temp.endY = this->endY;
-	temp.endZ = this->endZ;
-	return temp;
+	tempVectorForDifference.startX = this->startX + otherX;
+	tempVectorForDifference.startY = this->startY + otherY;
+	tempVectorForDifference.startZ = this->startZ + otherZ;
+	tempVectorForDifference.endX = this->endX;
+	tempVectorForDifference.endY = this->endY;
+	tempVectorForDifference.endZ = this->endZ;
+	return tempVectorForDifference;
 }
 
 Vector& Vector::operator -= (Vector& other) {
@@ -121,29 +121,29 @@ Vector& Vector::operator -= (Vector& other) {
 }
 
 Vector Vector::operator * (Vector& other) {
-	Vector temp;
-	temp.startX = this->startX;
-	temp.startY = this->startY;
-	temp.startZ = this->startZ;
+	Vector tempVectorForMultiplication;
+	tempVectorForMultiplication.startX = this->startX;
+	tempVectorForMultiplication.startY = this->startY;
+	tempVectorForMultiplication.startZ = this->startZ;
 	double thisX, thisY, thisZ;
 	this->CoordinateDifference(thisX, thisY, thisZ);
 	double otherX, otherY, otherZ;
 	other.CoordinateDifference(otherX, otherY, otherZ);
-	temp.endX = thisY * otherZ - thisZ * otherY + temp.startX;
-	temp.endY = -1 * thisX * otherZ + thisZ * otherX + temp.startY;
-	temp.endZ = thisX * otherY - thisY * otherX + temp.startZ;
-	return temp;
+	tempVectorForMultiplication.endX = thisY * otherZ - thisZ * otherY + tempVectorForMultiplication.startX;
+	tempVectorForMultiplication.endY = -1 * thisX * otherZ + thisZ * otherX + tempVectorForMultiplication.startY;
+	tempVectorForMultiplication.endZ = thisX * otherY - thisY * otherX + tempVectorForMultiplication.startZ;
+	return tempVectorForMultiplication;
 }
 
 Vector& Vector::operator *= (Vector& other) {
-	Vector temp = *this;
-	double tempX, tempY, tempZ;
-	temp.CoordinateDifference(tempX, tempY, tempZ);
+	Vector tempVectorForMultiEq = *this;
+	double tempVectorMultiEqX, tempVectorMultiEqY, tempVectorMultiEqZ;
+	tempVectorForMultiEq.CoordinateDifference(tempVectorMultiEqX, tempVectorMultiEqY, tempVectorMultiEqZ);
 	double otherX, otherY, otherZ;
 	other.CoordinateDifference(otherX, otherY, otherZ);
-	this->endX = tempY * otherZ - tempZ * otherY + temp.startX;
-	this->endY = -1 * tempX * otherZ + tempZ * otherX + temp.startY;
-	this->endZ = tempX * otherY - tempY * otherX + temp.startZ;
+	this->endX = tempVectorMultiEqY * otherZ - tempVectorMultiEqZ * otherY + tempVectorForMultiEq.startX;
+	this->endY = -1 * tempVectorMultiEqX * otherZ + tempVectorMultiEqZ * otherX + tempVectorForMultiEq.startY;
+	this->endZ = tempVectorMultiEqX * otherY - tempVectorMultiEqY * otherX + tempVectorForMultiEq.startZ;
 	return *this;
 }
 
@@ -156,25 +156,25 @@ double Vector::operator * (Vector* other) {
 }
 
 Vector Vector::operator * (const double& lambda) {
-	Vector temp;
-	temp.startX = lambda * this->startX;
-	temp.startY = lambda * this->startY;
-	temp.startZ = lambda * this->startZ;
-	temp.endX = lambda * this->endX;
-	temp.endY = lambda * this->endY;
-	temp.endZ = lambda * this->endZ;
-	return temp;
+	Vector tempVectorForMultiValue;
+	tempVectorForMultiValue.startX = lambda * this->startX;
+	tempVectorForMultiValue.startY = lambda * this->startY;
+	tempVectorForMultiValue.startZ = lambda * this->startZ;
+	tempVectorForMultiValue.endX = lambda * this->endX;
+	tempVectorForMultiValue.endY = lambda * this->endY;
+	tempVectorForMultiValue.endZ = lambda * this->endZ;
+	return tempVectorForMultiValue;
 }
 
 Vector operator *(const double& lambda, const Vector& value) {
-	Vector temp;
-	temp.startX = lambda * value.startX;
-	temp.startY = lambda * value.startY;
-	temp.startZ = lambda * value.startZ;
-	temp.endX = lambda * value.endX;
-	temp.endY = lambda * value.endY;
-	temp.endZ = lambda * value.endZ;
-	return temp;
+	Vector tempVectorForValueMultiplication;
+	tempVectorForValueMultiplication.startX = lambda * value.startX;
+	tempVectorForValueMultiplication.startY = lambda * value.startY;
+	tempVectorForValueMultiplication.startZ = lambda * value.startZ;
+	tempVectorForValueMultiplication.endX = lambda * value.endX;
+	tempVectorForValueMultiplication.endY = lambda * value.endY;
+	tempVectorForValueMultiplication.endZ = lambda * value.endZ;
+	return tempVectorForValueMultiplication;
 }
 
 Vector& Vector::operator *= (const double& lambda) {
@@ -192,14 +192,14 @@ Vector Vector::operator / (const Vector& other) {
 		throw runtime_error("Impossible to calculate! Denominator's coordinates equal zero!");
 	}
 
-	Vector temp;
-	temp.startX = this->startX / other.startX;
-	temp.startY = this->startY / other.startY;
-	temp.startZ = this->startZ / other.startZ;
-	temp.endX = this->endX / other.endX;
-	temp.endY = this->endY / other.endY;
-	temp.endZ = this->endZ / other.endZ;
-	return temp;
+	Vector tempVectorForDivision;
+	tempVectorForDivision.startX = this->startX / other.startX;
+	tempVectorForDivision.startY = this->startY / other.startY;
+	tempVectorForDivision.startZ = this->startZ / other.startZ;
+	tempVectorForDivision.endX = this->endX / other.endX;
+	tempVectorForDivision.endY = this->endY / other.endY;
+	tempVectorForDivision.endZ = this->endZ / other.endZ;
+	return tempVectorForDivision;
 }
 
 Vector& Vector::operator /= (const Vector& other) {
