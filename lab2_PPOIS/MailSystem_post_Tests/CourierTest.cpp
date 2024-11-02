@@ -2,16 +2,6 @@
 #include "E:\PPOIS\labs\MailSystem_post\Courier.h"
 #include "E:\PPOIS\labs\MailSystem_post\Courier.cpp"
 
-
-#include "E:\PPOIS\labs\MailSystem_post\Employee.h"
-#include "E:\PPOIS\labs\MailSystem_post\Employee.cpp"
-#include "E:\PPOIS\labs\MailSystem_post\Human.h"
-#include "E:\PPOIS\labs\MailSystem_post\Human.cpp"
-//#include "E:\PPOIS\labs\MailSystem_post\Payment.h"
-//#include "E:\PPOIS\labs\MailSystem_post\Payment.cpp"
-
-
-
 //Courier
 TEST(CourierTest, WorkingTest) {
 	Date MakiksBday(11, 11, 2001);
