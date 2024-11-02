@@ -51,7 +51,7 @@ TEST(HumanCustomerTest, VerifyIdentity_ExpectTrue) {
 	Date bday(9, 11, 2006);
 	Customer Yanix("Yana", "Bankevich", bday, "Ab1112233", "Frolenkova 11");
 
-	// Проверка значений
+	// ГЏГ°Г®ГўГҐГ°ГЄГ  Г§Г­Г Г·ГҐГ­ГЁГ©
 	std::cout << "Passport ID: " << Yanix.VerifyIdentity("Ab1112233") << std::endl;
 	std::cout << "Name: " << Yanix.GetFullName() << std::endl;
 
