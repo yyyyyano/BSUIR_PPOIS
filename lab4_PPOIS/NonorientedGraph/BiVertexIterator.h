@@ -1,7 +1,6 @@
 #ifndef BI_VERTEX_ITERATOR_H
 #define BI_VERTEX_ITERATOR_H
 
-
 #include <utility>  
 #include <vector>  
 #include <iterator>
