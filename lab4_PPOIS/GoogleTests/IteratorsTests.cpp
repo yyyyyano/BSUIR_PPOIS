@@ -1,8 +1,8 @@
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiAdjacentVertexIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiEdgeIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiIncidentEdgeIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiVertexIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\NonorientedGraph.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiAdjacentVertexIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiEdgeIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiIncidentEdgeIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiVertexIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\NonorientedGraph.h"
 #include "pch.h"
 
 TEST(BiIncidentEdgeIteratorTests, IncidentEdgesExist) {
