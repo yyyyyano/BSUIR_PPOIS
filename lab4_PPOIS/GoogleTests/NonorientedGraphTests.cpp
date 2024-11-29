@@ -1,22 +1,22 @@
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiAdjacentVertexIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiEdgeIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiIncidentEdgeIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\BiVertexIterator.h"
-#include "E:\PPOIS\labs\lab4\lab4_PPOI\NonorientedGraph.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiAdjacentVertexIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiEdgeIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiIncidentEdgeIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\BiVertexIterator.h"
+#include "E:\PPOIS\labs\lab4_PPOIS\NonorientedGraph.h"
 #include "pch.h"
 
-TEST(NonorientedGraphTest, IsEmpty_True) {
+TEST(NonorientedGraphTests, IsEmpty_True) {
 	NonorientedGraph<int> graph1;
 	EXPECT_TRUE(graph1.IsEmpty());
 }
 
-TEST(NonorientedGraphTest, IsEmpty_False) {
+TEST(NonorientedGraphTests, IsEmpty_False) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	EXPECT_FALSE(graph1.IsEmpty());
 }
 
-TEST(NonorientedGraphTest, ClearTest) {
+TEST(NonorientedGraphTests, ClearTest) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -29,7 +29,7 @@ TEST(NonorientedGraphTest, ClearTest) {
 	EXPECT_EQ(graph1.GetVertexCount(), 0);
 }
 
-TEST(NonorientedGraphTest, HasVertex_True) {
+TEST(NonorientedGraphTests, HasVertex_True) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -38,7 +38,7 @@ TEST(NonorientedGraphTest, HasVertex_True) {
 	EXPECT_TRUE(graph1.HasVertex(11));
 }
 
-TEST(NonorientedGraphTest, HasVertex_¿Ù‰˚Û) {
+TEST(NonorientedGraphTests, HasVertex_ExpectFalse) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -47,7 +47,7 @@ TEST(NonorientedGraphTest, HasVertex_¿Ù‰˚Û) {
 	EXPECT_FALSE(graph1.HasVertex(321));
 }
 
-TEST(NonorientedGraphTest, HasVertexByIdx_True) {
+TEST(NonorientedGraphTests, HasVertexByIdx_True) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -56,7 +56,7 @@ TEST(NonorientedGraphTest, HasVertexByIdx_True) {
 	EXPECT_TRUE(graph1.HasVertexByIdx(1));
 }
 
-TEST(NonorientedGraphTest, HasVertexByIdx_False) {
+TEST(NonorientedGraphTests, HasVertexByIdx_False) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -65,7 +65,7 @@ TEST(NonorientedGraphTest, HasVertexByIdx_False) {
 	EXPECT_FALSE(graph1.HasVertexByIdx(11));
 }
 
-TEST(NonorientedGraphTest, HasEdge_True_TwoCombinations) {
+TEST(NonorientedGraphTests, HasEdge_True_TwoCombinations) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -77,7 +77,7 @@ TEST(NonorientedGraphTest, HasEdge_True_TwoCombinations) {
 	EXPECT_TRUE(graph1.HasEdge(3, 1));
 }
 
-TEST(NonorientedGraphTest, HasEdge_False) {
+TEST(NonorientedGraphTests, HasEdge_False) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -87,7 +87,7 @@ TEST(NonorientedGraphTest, HasEdge_False) {
 	EXPECT_FALSE(graph1.HasEdge(3, 2));
 }
 
-TEST(NonorientedGraphTest, HasEdgeByIdx_True) {
+TEST(NonorientedGraphTests, HasEdgeByIdx_True) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	graph1.AddVertex(11);
@@ -97,7 +97,7 @@ TEST(NonorientedGraphTest, HasEdgeByIdx_True) {
 	EXPECT_TRUE(graph1.HasEdgeByIdx(1));
 }
 
-TEST(NonorientedGraphTest, HasEdgeByidx_False) {
+TEST(NonorientedGraphTests, HasEdgeByidx_False) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(110);
 	EXPECT_NO_THROW(graph1.AddVertex(1), runtime_error);
@@ -108,19 +108,19 @@ TEST(NonorientedGraphTest, HasEdgeByidx_False) {
 	EXPECT_FALSE(graph1.HasEdgeByIdx(3));
 }
 
-TEST(NonorientedGraphTest, AddVertex_CatchException) {
+TEST(NonorientedGraphTests, AddVertex_CatchException) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(13);
 	ASSERT_THROW(graph1.AddVertex(13), runtime_error);
 }
 
-TEST(NonorientedGraphTest, DeleteVertex_CatchException) {
+TEST(NonorientedGraphTests, DeleteVertex_CatchException) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(13);
 	EXPECT_THROW(graph1.DeleteVertex(2), runtime_error);
 }
 
-TEST(NonorientedGraphTest, DeleteVertex_NoException) {
+TEST(NonorientedGraphTests, DeleteVertex_NoException) {
 	NonorientedGraph<int> graph1;
 	graph1.AddVertex(13);
 	graph1.AddVertex(8);
@@ -128,10 +128,10 @@ TEST(NonorientedGraphTest, DeleteVertex_NoException) {
 	graph1.AddEdge(2, 2);
 	EXPECT_EQ(graph1.GetVertexCount(), 2);
 	EXPECT_NO_THROW(graph1.DeleteVertex(2), runtime_error);
-    EXPECT_EQ(graph1.GetVertexCount(), 1);
+        EXPECT_EQ(graph1.GetVertexCount(), 1);
 }
 
-TEST(NonorientedGraphTest, AddEdge_CatchException) {
+TEST(NonorientedGraphTests, AddEdge_CatchException) {
 	NonorientedGraph<int> graph;
 	graph.AddVertex(10);
 	graph.AddVertex(2);
@@ -140,7 +140,7 @@ TEST(NonorientedGraphTest, AddEdge_CatchException) {
 	ASSERT_THROW(graph.AddEdge(1, 2), runtime_error);
 }
 
-TEST(NonorientedGraphTest, AddEdge_CatchNoException) {
+TEST(NonorientedGraphTests, AddEdge_CatchNoException) {
 	NonorientedGraph<int> graph;
 	graph.AddVertex(10);
 	graph.AddVertex(2);
@@ -149,7 +149,7 @@ TEST(NonorientedGraphTest, AddEdge_CatchNoException) {
 	EXPECT_NO_THROW(graph.AddEdge(1, 3), runtime_error);
 }
 
-TEST(NonorientedGraphTest, DeleteEdge_CatchException) {
+TEST(NonorientedGraphTests, DeleteEdge_CatchException) {
 	NonorientedGraph<int> graph;
 	graph.AddVertex(10);
 	graph.AddVertex(2);
@@ -158,7 +158,7 @@ TEST(NonorientedGraphTest, DeleteEdge_CatchException) {
 	ASSERT_THROW(graph.DeleteEdge(1, 3), runtime_error);
 }
 
-TEST(NonorientedGraphTest, DeleteEdge_CatchNoException) {
+TEST(NonorientedGraphTests, DeleteEdge_CatchNoException) {
 	NonorientedGraph<int> graph;
 	graph.AddVertex(10);
 	graph.AddVertex(2);
@@ -169,7 +169,7 @@ TEST(NonorientedGraphTest, DeleteEdge_CatchNoException) {
 	EXPECT_EQ(graph.GetEdgesCount(), 1);
 }
 
-TEST(NonorientedGraphtest, DeleteEdgeByidx_CatchException) {
+TEST(NonorientedGraphTests, DeleteEdgeByidx_CatchException) {
 	NonorientedGraph<int> graph2;
 	graph2.AddVertex(10);
 	graph2.AddVertex(2);
@@ -179,14 +179,14 @@ TEST(NonorientedGraphtest, DeleteEdgeByidx_CatchException) {
 	ASSERT_THROW(graph2.DeleteEdgeByIdx(3), runtime_error);
 }
 
-TEST(NonorientedGraph, GetVertexCount_Correct) {
+TEST(NonorientedGraphTests, GetVertexCount_Correct) {
 	NonorientedGraph<int> gr;
 	gr.AddVertex(10);
 	gr.AddVertex(3);
 	EXPECT_EQ(gr.GetVertexCount(), 2);
 }
 
-TEST(NonorientedGraph, GetEdgesCount_Correct) {
+TEST(NonorientedGraphTests, GetEdgesCount_Correct) {
 	NonorientedGraph<int> gr;
 	gr.AddVertex(10);
 	gr.AddVertex(3);
@@ -260,7 +260,7 @@ TEST(NonorientedGraphTests, CopyConstructor) {
 	EXPECT_EQ(b.GetVertexCount(), 2);
 }
 
-TEST(NonorientedGraphTest, OperatorRavnoRavno_True) {
+TEST(NonorientedGraphTests, OperatorRavnoRavno_True) {
 	NonorientedGraph<int> a;
 	a.AddVertex(1);
 	a.AddVertex(2);
@@ -270,7 +270,7 @@ TEST(NonorientedGraphTest, OperatorRavnoRavno_True) {
 	EXPECT_TRUE(a == b);
 }
 
-TEST(NonorientedGraphTest, OperatorRavnoRavno_False) {
+TEST(NonorientedGraphTests, OperatorRavnoRavno_False) {
 	NonorientedGraph<int> a;
 	a.AddVertex(1);
 	a.AddVertex(2);
@@ -281,7 +281,7 @@ TEST(NonorientedGraphTest, OperatorRavnoRavno_False) {
 	EXPECT_FALSE(a == b);
 }
 
-TEST(NonorientedGraphTest, OperatorNotRavno_True) {
+TEST(NonorientedGraphTests, OperatorNotRavno_True) {
 	NonorientedGraph<int> a;
 	a.AddVertex(1);
 	a.AddVertex(2);
@@ -292,7 +292,7 @@ TEST(NonorientedGraphTest, OperatorNotRavno_True) {
 	EXPECT_TRUE(a != b);
 }
 
-TEST(NonorientedGraphTest, OperatorNotRavno_False) {
+TEST(NonorientedGraphTests, OperatorNotRavno_False) {
 	NonorientedGraph<int> a;
 	a.AddVertex(1);
 	a.AddVertex(2);
