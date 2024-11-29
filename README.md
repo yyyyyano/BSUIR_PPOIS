@@ -1,3 +1,3 @@
-This is my private repository for some labs :)
+This is my public repository for some PPOIS labs :)
 
  ***yyyyyano***
