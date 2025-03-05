@@ -1,0 +1,172 @@
+{
+    "Breakfast": [
+        {
+            "name": "Eggs",
+            "price": 11.2,
+            "ingredients": {
+                "eggs": 10,
+                "oil": 0
+            },
+            "weight": 250
+        },
+        {
+            "name": "Porridge",
+            "price": 5.0,
+            "ingredients": {
+                "porridge": 5,
+                "water": 0
+            },
+            "weight": 200
+        }
+    ],
+    "Hot drinks": [
+        {
+            "name": "Green Tea",
+            "price": 2.5,
+            "ingredients": {
+                "tea": 5,
+                "water": 3
+            },
+            "weight": 330
+        },
+        {
+            "name": "Latte coffee",
+            "price": 3.2,
+            "ingredients": {
+                "milk": 2,
+                "coffee": 4,
+                "sugar": 1
+            },
+            "weight": 440
+        }
+    ],
+    "Soup": [
+        {
+            "name": "Borshch",
+            "price": 11.5,
+            "ingredients": {
+                "water": 10,
+                "cabbage": 5,
+                "potato": 5,
+                "meat": 2,
+                "beets": 4
+            },
+            "weight": 500
+        }
+    ],
+    "Hot combo": [
+        {
+            "name": "Potato & meat",
+            "price": 15.6,
+            "ingredients": {
+                "potato": 10,
+                "meat": 15
+            },
+            "weight": 750
+        },
+        {
+            "name": "Lasagna",
+            "price": 24,
+            "ingredients": {
+                "water": 1,
+                "souse": 5,
+                "meat": 4,
+                "macaroni": 5
+            },
+            "weight": 560
+        },
+        {
+            "name": "Mac-n-cheese",
+            "price": 16.7,
+            "ingredients": {
+                "macaroni": 14,
+                "cheese souse": 5
+            },
+            "weight": 430
+        }
+    ],
+    "Cold drinks": [
+        {
+            "name": "Apple juice",
+            "price": 5.0,
+            "ingredients": {
+                "apple juice": 1
+            },
+            "weight": 330
+        },
+        {
+            "name": "Orange juice",
+            "price": 5.0,
+            "ingredients": {
+                "orange juice": 1
+            },
+            "weight": 330
+        },
+        {
+            "name": "Coca cola",
+            "price": 1.15,
+            "ingredients": {
+                "cola": 1
+            },
+            "weight": 330
+        },
+        {
+            "name": "Pinapple juice",
+            "price": 5.0,
+            "ingredients": {
+                "pinapple juice": 1
+            },
+            "weight": 330
+        }
+    ],
+    "Fish": [
+        {
+            "name": "Red fish",
+            "price": 4.15,
+            "ingredients": {
+                "red fish": 7,
+                "oregano": 1
+            },
+            "weight": 150
+        },
+        {
+            "name": "Diet fish",
+            "price": 9.7,
+            "ingredients": {
+                "white fish": 15
+            },
+            "weight": 200
+        }
+    ],
+    "Garnish": [
+        {
+            "name": "Mashed potatoes",
+            "price": 3.2,
+            "ingredients": {
+                "potato": 15,
+                "milk": 2
+            },
+            "weight": 200
+        },
+        {
+            "name": "Macaroni",
+            "price": 4.0,
+            "ingredients": {
+                "macaroni": 1
+            },
+            "weight": 330
+        }
+    ],
+    "Burgers": [
+        {
+            "name": "Cheeseburger",
+            "price": 12.0,
+            "ingredients": {
+                "bread": 13,
+                "ham": 10,
+                "cheese": 4
+            },
+            "weight": 430
+        }
+    ]
+}
