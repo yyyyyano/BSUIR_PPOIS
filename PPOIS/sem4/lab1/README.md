@@ -127,31 +127,54 @@
 @startuml
 skinparam style rose
 
-[*] --> Canteen : Application start
-Canteen --> Menu : Load menu from file
-Menu --> Dish : Menu contains dishes
-Canteen --> Table : Initiate tables
-Canteen --> Employee : Initiate employees
-Canteen --> [*] : Shutdown system
+[*] --> Initialization : Program start
+Initialization --> load_from_file : Loading Menu from json
+load_from_file --> menu_of_selections : Main menu_of_selections
+menu_of_selections --> action_one : 1 choice
+action_one --> show_menu : Viewing menu*
+show_menu --> mouse_dance : Bonus
+mouse_dance --> menu_of_selections : Return
 
-Customer --> Canteen : Enter canteen
-Customer --> Menu : Browse menu
-Customer --> Employee : Request assistance
+menu_of_selections --> action_two : 2 choice
+action_two --> plan_menu_for_day : Planning Menu
+plan_menu_for_day --> menu_of_selections : Return
 
-Employee --> Order : Create order for customer
-Order --> Dish : Order contains dishes
-Order --> Menu : Validate dishes in menu
-Order --> Table : Assign table to order
-Order --> [*] : Completed and served
+menu_of_selections --> action_three : 3 choice
+action_three --> init_dish : Entering dish info
+init_dish --> add_dish : Adding new dish to menu
+add_dish --> save_to_file : Saving updated menu to json
+save_to_file --> menu_of_selections: Return
 
-Employee --> Table : Clean table
-Table --> [*] : Ready for next customer
+menu_of_selections --> action_four: 4 choice
+action_four --> cleaning : Cleaning all tables
+cleaning --> menu_of_selections : Return
 
-Dish --> [*] : Served to customer
+menu_of_selections --> action_five: 5 choice
+action_five --> manage_orders : Managing all orders by employees
+manage_orders --> menu_of_selections : Return
 
-Mouse --> Canteen : Error (Mouse appears)
+menu_of_selections --> action_six : 6 choice
+action_six --> init_customer : Creating customer
+init_customer --> book_table : Booking table for entered capacity
+book_table --> menu_of_selections: Return
+
+menu_of_selections --> action_seven : 7 choice
+action_seven --> init_customer : Creating customer
+init_customer --> serve_customer : Serving customer by Employee
+serve_customer --> make_order : Customer makes Order
+make_order --> cook : Cooking dishes from Order
+cook --> menu_of_selections : Return
+
+menu_of_selections --> action_eight : 8 choice
+action_eight --> menu : Viewing menu
+menu --> menu_of_selections: Return
+
+menu_of_selections --> exit : 0 choice
+exit --> [*]
 
 @enduml
+
 ```
 
-![diagram_PPOIS1](https://github.com/user-attachments/assets/bdc7dad3-9f1b-435e-a8dd-849ad39a9b0c)
+![diagram_PPOIS1](https://github.com/user-attachments/assets/9afc900b-b387-4e2d-8efe-d59afb59e01e)
+
