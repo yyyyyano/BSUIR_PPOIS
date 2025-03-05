@@ -1,8 +1,8 @@
-# Canteen Management System
+# Canteen System
 
 ## Описание проекта
 
-**Canteen Management System** — это программное обеспечение, которое симулирует работу столовой или кафе. В проекте предусмотрены такие функции, как работа с меню, обслуживание клиентов, управление заказами, чистка столов, обработка статусов сотрудников, обработка заказов и взаимодействие всех элементов системы.
+**Canteen System** — симуляция столовой. В проекте предусмотрены такие функции, как работа с меню, обслуживание клиентов, управление заказами, чистка столов, обработка статусов сотрудников, обработка заказов и взаимодействие всех элементов системы.
 
 ## Основные классы и их функции:
 
@@ -113,52 +113,6 @@
 - **Customer** делает заказ, используя **Menu**. Заказ создаётся через **Order**.
 - **Employee** проверяет доступные столы через **Table**, обслуживает клиентов и управляет заказами.
 - **Canteen** работает как управляющая структура, связывая все классы между собой.
-
-## Установка
-
-1. Склонируйте репозиторий:
-   ```bash
-   git clone https://github.com/your-repo/canteen-management.git
-   cd canteen-management
-   ```
-2. Убедитесь, что у вас установлен Python версии 3.8 и выше.
-3. Установите зависимости, если они есть:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Запуск программы
-
-1. Убедитесь, что все файлы проекта находятся в одной папке.
-2. Для выполнения тестов или запуска программы выполните основную логику в вашем модуле Python:
-   ```bash
-   python main.py
-   ```
-
-## Пример кода (демонстрация работы)
-Вот пример использования системы для обслуживания клиента:
-
-```python
-from canteen import Canteen
-from menu import Menu
-from employee import Employee
-from table import Table
-from customer import Customer
-from date import Date
-
-# Создание экземпляров основных объектов
-menu = Menu()
-menu.load_from_file("menu.json")
-staff = [Employee("John", "Doe", Date(1, 1, 1985), "Waiter")]
-tables = [Table(capacity=4), Table(capacity=6)]
-
-canteen = Canteen("Sunny Canteen", menu, staff, "123 Main St", [], tables)
-
-# Работа системы
-canteen.show_menu()  # Показать меню
-customer = Customer("Alice", "Brown", Date(15, 6, 1990), "+375291234567")
-canteen.serve_customer(customer)  # Обслуживание клиента
-```
 
 ## UML-диаграмма
 
