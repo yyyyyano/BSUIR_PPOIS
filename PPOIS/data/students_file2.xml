@@ -1,0 +1,47 @@
+<students>
+    <student>
+        <id>1</id>
+        <full_name>Крючков Лев Сергеевич</full_name>
+        <course>Sophomore</course>
+        <group>321702</group>
+        <number_of_works>10</number_of_works>
+        <made_works>8</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>2</id>
+        <full_name>Круглова Яна Арсентьевна</full_name>
+        <course>Junior</course>
+        <group>234567</group>
+        <number_of_works>15</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>69</id>
+        <full_name>Алексеев Александр Олегович</full_name>
+        <course>Junior</course>
+        <group>123456</group>
+        <number_of_works>5</number_of_works>
+        <made_works>7</made_works>
+        <programming_language>1C</programming_language>
+    </student>
+    <student>
+        <id>70</id>
+        <full_name>Михайлов Станислав Викторович</full_name>
+        <course>Senior</course>
+        <group>120901</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>71</id>
+        <full_name>Бутрин Владимир Алексеевич</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>52</number_of_works>
+        <made_works>36</made_works>
+        <programming_language>Assembly</programming_language>
+    </student>
+</students>

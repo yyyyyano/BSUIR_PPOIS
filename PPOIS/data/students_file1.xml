@@ -1,0 +1,47 @@
+<students>
+    <student>
+        <id>1</id>
+        <full_name>Иванов Иван Иванович</full_name>
+        <course>Sophomore</course>
+        <group>123456</group>
+        <number_of_works>10</number_of_works>
+        <made_works>8</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>2</id>
+        <full_name>Петров Петр Петрович</full_name>
+        <course>Junior</course>
+        <group>234567</group>
+        <number_of_works>15</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>60</id>
+        <full_name>Ермаков Никита Тимурович</full_name>
+        <course>Junior</course>
+        <group>321025</group>
+        <number_of_works>9</number_of_works>
+        <made_works>6</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>61</id>
+        <full_name>Прокофьева Вера Фёдоровна</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>80</number_of_works>
+        <made_works>69</made_works>
+        <programming_language>Swift</programming_language>
+    </student>
+    <student>
+        <id>62</id>
+        <full_name>Чеснокова Вероника Артёмовна</full_name>
+        <course>Sophomore</course>
+        <group>816521</group>
+        <number_of_works>8</number_of_works>
+        <made_works>3</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+</students>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+    <student>
+        <id>22</id>
+        <full_name>Иванов Иван Иванович  </full_name>
+        <course>Sophomore</course>
+        <group>123456</group>
+        <number_of_works>10</number_of_works>
+        <made_works>8</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>23</id>
+        <full_name>Петров Петр Петрович  </full_name>
+        <course>Junior</course>
+        <group>234567</group>
+        <number_of_works>15</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>24</id>
+        <full_name>Банкевич Яна Дмитриевна</full_name>
+        <course>Sophomore</course>
+        <group>321702</group>
+        <number_of_works>14</number_of_works>
+        <made_works>5</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>25</id>
+        <full_name>Рублевская Екатерина Александровна</full_name>
+        <course>Junior</course>
+        <group>321702</group>
+        <number_of_works>10</number_of_works>
+        <made_works>9</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>26</id>
+        <full_name>Сергиевич Дарья Павловна</full_name>
+        <course>Senior</course>
+        <group>321701</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>27</id>
+        <full_name>Никитина Дарья Вячеславовна</full_name>
+        <course>Freshman</course>
+        <group>300011</group>
+        <number_of_works>14</number_of_works>
+        <made_works>5</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>28</id>
+        <full_name>Гусев Георгий Артемьевич</full_name>
+        <course>Freshman</course>
+        <group>320601</group>
+        <number_of_works>9</number_of_works>
+        <made_works>9</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>29</id>
+        <full_name>Филимонова Василиса Матвеевна</full_name>
+        <course>Senior</course>
+        <group>420602</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>30</id>
+        <full_name>Игнатьева Елизавета Михайловна</full_name>
+        <course>Sophomore</course>
+        <group>112401</group>
+        <number_of_works>11</number_of_works>
+        <made_works>7</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>31</id>
+        <full_name>Калмыкова Милана Владиславовна</full_name>
+        <course>Sophomore</course>
+        <group>110606</group>
+        <number_of_works>14</number_of_works>
+        <made_works>14</made_works>
+        <programming_language>TypeScript</programming_language>
+    </student>
+    <student>
+        <id>32</id>
+        <full_name>Горшков Михаил Артёмович</full_name>
+        <course>Freshman</course>
+        <group>123456</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>33</id>
+        <full_name>Сычев Игорь Михайлович</full_name>
+        <course>Senior</course>
+        <group>121212</group>
+        <number_of_works>21</number_of_works>
+        <made_works>13</made_works>
+        <programming_language>JavaScript</programming_language>
+    </student>
+    <student>
+        <id>34</id>
+        <full_name>Комаров Максим Степанович</full_name>
+        <course>Junior</course>
+        <group>511003</group>
+        <number_of_works>9</number_of_works>
+        <made_works>6</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>35</id>
+        <full_name>Князев Юрий Николаевич</full_name>
+        <course>Freshman</course>
+        <group>123456</group>
+        <number_of_works>1</number_of_works>
+        <made_works>1</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>36</id>
+        <full_name>Бондарев Евгений Маратович</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>11</number_of_works>
+        <made_works>11</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>37</id>
+        <full_name>Карасева Оливия Ярославовна</full_name>
+        <course>Senior</course>
+        <group>321702</group>
+        <number_of_works>14</number_of_works>
+        <made_works>5</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>38</id>
+        <full_name>Савина Ксения Арсентьевна</full_name>
+        <course>Freshman</course>
+        <group>123456</group>
+        <number_of_works>14</number_of_works>
+        <made_works>14</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>39</id>
+        <full_name>Еремина Арина Тимофеевна</full_name>
+        <course>Senior</course>
+        <group>150601</group>
+        <number_of_works>10</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>TypeScript</programming_language>
+    </student>
+    <student>
+        <id>40</id>
+        <full_name>Рыбаков Дмитрий Тимофеевич</full_name>
+        <course>Sophomore</course>
+        <group>123456</group>
+        <number_of_works>9</number_of_works>
+        <made_works>7</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>41</id>
+        <full_name>Матвеев Роберт Тимофеевич</full_name>
+        <course>Junior</course>
+        <group>361404</group>
+        <number_of_works>15</number_of_works>
+        <made_works>9</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>42</id>
+        <full_name>Юдин Тимофей Александрович</full_name>
+        <course>Senior</course>
+        <group>460514</group>
+        <number_of_works>8</number_of_works>
+        <made_works>8</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>43</id>
+        <full_name>Захаров Алексей Глебович</full_name>
+        <course>Freshman</course>
+        <group>123456</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>JavaScript</programming_language>
+    </student>
+    <student>
+        <id>44</id>
+        <full_name>Ковалева Полина Макаровна</full_name>
+        <course>Junior</course>
+        <group>321701</group>
+        <number_of_works>15</number_of_works>
+        <made_works>15</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>45</id>
+        <full_name>Кузнецов Дмитрий Петрович</full_name>
+        <course>Senior</course>
+        <group>602177</group>
+        <number_of_works>19</number_of_works>
+        <made_works>18</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>46</id>
+        <full_name>Морозова София Игоревна</full_name>
+        <course>Junior</course>
+        <group>981704</group>
+        <number_of_works>0</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>47</id>
+        <full_name>Иванов Петр Глебович</full_name>
+        <course>Sophomore</course>
+        <group>485144</group>
+        <number_of_works>11</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>48</id>
+        <full_name>Галкина София Павловна</full_name>
+        <course>Sophomore</course>
+        <group>321061</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>JavaScript</programming_language>
+    </student>
+    <student>
+        <id>49</id>
+        <full_name>Дементьев Михаил Михаилович</full_name>
+        <course>Senior</course>
+        <group>321703</group>
+        <number_of_works>22</number_of_works>
+        <made_works>19</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>50</id>
+        <full_name>Михеев Макар Алексеевич</full_name>
+        <course>Junior</course>
+        <group>550801</group>
+        <number_of_works>12</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>51</id>
+        <full_name>Павловская Анастасия Сергеевна</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>9</number_of_works>
+        <made_works>9</made_works>
+        <programming_language>Ruby</programming_language>
+    </student>
+    <student>
+        <id>52</id>
+        <full_name>Терехова Анастасия Максимовна</full_name>
+        <course>Freshman</course>
+        <group>411205</group>
+        <number_of_works>1</number_of_works>
+        <made_works>1</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>53</id>
+        <full_name>Поздняков Тимофей Игоревич</full_name>
+        <course>Junior</course>
+        <group>678303</group>
+        <number_of_works>11</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>TypeScript</programming_language>
+    </student>
+    <student>
+        <id>54</id>
+        <full_name>Ефимов Николай Павлович</full_name>
+        <course>Senior</course>
+        <group>650603</group>
+        <number_of_works>78</number_of_works>
+        <made_works>70</made_works>
+        <programming_language>C#</programming_language>
+    </student>
+    <student>
+        <id>55</id>
+        <full_name>Крючков Лев Сергеевич  </full_name>
+        <course>Sophomore</course>
+        <group>321702</group>
+        <number_of_works>10</number_of_works>
+        <made_works>8</made_works>
+        <programming_language>Python</programming_language>
+    </student>
+    <student>
+        <id>56</id>
+        <full_name>Круглова Яна Арсентьевна  </full_name>
+        <course>Junior</course>
+        <group>234567</group>
+        <number_of_works>15</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>57</id>
+        <full_name>Рязанова Екатерина Сергеевна</full_name>
+        <course>Freshman</course>
+        <group>478104</group>
+        <number_of_works>2</number_of_works>
+        <made_works>1</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>58</id>
+        <full_name>Егорова Серафима Марковна</full_name>
+        <course>Senior</course>
+        <group>415002</group>
+        <number_of_works>12</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>TypeScript</programming_language>
+    </student>
+    <student>
+        <id>59</id>
+        <full_name>Орлов Артур Романович</full_name>
+        <course>Sophomore</course>
+        <group>673601</group>
+        <number_of_works>18</number_of_works>
+        <made_works>1</made_works>
+        <programming_language>C#</programming_language>
+    </student>
+    <student>
+        <id>60</id>
+        <full_name>Ермаков Никита Тимурович</full_name>
+        <course>Junior</course>
+        <group>321025</group>
+        <number_of_works>9</number_of_works>
+        <made_works>6</made_works>
+        <programming_language>Go</programming_language>
+    </student>
+    <student>
+        <id>61</id>
+        <full_name>Прокофьева Вера Фёдоровна</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>80</number_of_works>
+        <made_works>69</made_works>
+        <programming_language>Swift</programming_language>
+    </student>
+    <student>
+        <id>62</id>
+        <full_name>Чеснокова Вероника Артёмовна</full_name>
+        <course>Sophomore</course>
+        <group>816521</group>
+        <number_of_works>8</number_of_works>
+        <made_works>3</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>63</id>
+        <full_name>Римонт Елисей Михайлович</full_name>
+        <course>Senior</course>
+        <group>321702</group>
+        <number_of_works>9</number_of_works>
+        <made_works>7</made_works>
+        <programming_language>PHP</programming_language>
+    </student>
+    <student>
+        <id>64</id>
+        <full_name>Антипов Руслан Валерьевич</full_name>
+        <course>Freshman</course>
+        <group>418301</group>
+        <number_of_works>18</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>65</id>
+        <full_name>Гурин Валерий Викторович</full_name>
+        <course>Senior</course>
+        <group>180202</group>
+        <number_of_works>30</number_of_works>
+        <made_works>20</made_works>
+        <programming_language>Java</programming_language>
+    </student>
+    <student>
+        <id>66</id>
+        <full_name>Николаев Николай Николаевич</full_name>
+        <course>Sophomore</course>
+        <group>818303</group>
+        <number_of_works>11</number_of_works>
+        <made_works>10</made_works>
+        <programming_language>1C</programming_language>
+    </student>
+    <student>
+        <id>67</id>
+        <full_name>Зотов Никита Владимирович</full_name>
+        <course>Senior</course>
+        <group>921701</group>
+        <number_of_works>20</number_of_works>
+        <made_works>18</made_works>
+        <programming_language>C/C++</programming_language>
+    </student>
+    <student>
+        <id>68</id>
+        <full_name>Борисов Ян Александрович</full_name>
+        <course>Sophomore</course>
+        <group>821702</group>
+        <number_of_works>14</number_of_works>
+        <made_works>5</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>69</id>
+        <full_name>Алексеев Александр Олегович</full_name>
+        <course>Junior</course>
+        <group>123456</group>
+        <number_of_works>5</number_of_works>
+        <made_works>7</made_works>
+        <programming_language>1C</programming_language>
+    </student>
+    <student>
+        <id>70</id>
+        <full_name>Михайлов Станислав Викторович</full_name>
+        <course>Senior</course>
+        <group>120901</group>
+        <number_of_works>1</number_of_works>
+        <made_works>0</made_works>
+        <programming_language>Kotlin</programming_language>
+    </student>
+    <student>
+        <id>71</id>
+        <full_name>Бутрин Владимир Алексеевич</full_name>
+        <course>Senior</course>
+        <group>123456</group>
+        <number_of_works>52</number_of_works>
+        <made_works>36</made_works>
+        <programming_language>Assembly</programming_language>
+    </student>
+</students>
